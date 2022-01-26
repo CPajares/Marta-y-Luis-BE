@@ -1,0 +1,71 @@
+{
+  "name": "martayluisbe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon index -q",
+    "start": "node .",
+    "tscdev": "tsc --watch",
+    "test": "jest --testPathIgnorePatterns /dist /server/routes/",
+    "supertest": "jest --testPathPattern --runInBand /server/routes/",
+    "fulltest": "jest --collect--coverage",
+    "build": "tsc"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "dist"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkylabCoders/Carlos_Back-Final-Project-202109.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SkylabCoders/Carlos_Back-Final-Project-202109/issues"
+  },
+  "homepage": "https://github.com/SkylabCoders/Carlos_Back-Final-Project-202109#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.1.6",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@babel/types": "^7.16.0",
+    "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^16.11.9",
+    "babel-jest": "^27.3.1",
+    "bcrypt": "^5.0.1",
+    "chalk": "^4.1.2",
+    "cors": "^2.8.5",
+    "debug": "^4.3.2",
+    "dotenv": "^10.0.0",
+    "eslint-config-airbnb-typescript": "^16.0.0",
+    "express": "^4.17.1",
+    "express-validation": "^3.0.8",
+    "firebase-admin": "^10.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "mongoose": "^6.0.13",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.3",
+    "ts-node": "^10.4.0"
+  }
+}
